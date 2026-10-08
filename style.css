@@ -49,12 +49,18 @@ header.site {
   border-bottom: 1px solid rgba(255, 255, 255, 0.06);
 }
 header.site .wrap { display: flex; align-items: center; justify-content: space-between; height: 66px; }
-.brand { display: inline-flex; align-items: center; gap: 10px; font-weight: 700; font-size: 17px; color: #fff; text-decoration: none; letter-spacing: -0.01em; }
+.brand { display: inline-flex; align-items: center; gap: 11px; color: #fff; text-decoration: none; }
 .brand .mark {
-  width: 28px; height: 28px; border-radius: 8px;
-  background: linear-gradient(135deg, var(--accent), var(--accent-2));
-  display: inline-grid; place-items: center; color: #fff; font-size: 14px; font-weight: 800;
-  box-shadow: 0 4px 14px rgba(79, 124, 255, 0.45);
+  width: 30px; height: 35px; flex: none; overflow: visible;
+  filter: drop-shadow(0 0 10px rgba(63, 157, 255, 0.45)) drop-shadow(0 4px 10px rgba(52, 230, 220, 0.18));
+}
+.brand .word {
+  font-family: "Segoe UI Variable Display", "Segoe UI", "Nunito", ui-rounded, "SF Pro Rounded", "Helvetica Neue", Arial, sans-serif;
+  font-weight: 700; font-size: 20px; letter-spacing: -0.012em; line-height: 1; white-space: nowrap;
+}
+.brand .grad-word {
+  background: linear-gradient(90deg, #5b8cff 0%, #4fb6f0 50%, #45e3cf 100%);
+  -webkit-background-clip: text; background-clip: text; color: transparent;
 }
 nav { display: flex; align-items: center; gap: 26px; }
 nav a { text-decoration: none; color: var(--hero-muted); font-size: 15px; transition: color .15s; }
